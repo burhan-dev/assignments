@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Demo WebPage</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/42ec929316.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="box">
+		<div class="nav-link" id="mytopnav">
+			<h1 id="logo"><a href="#">START BOOTSTRAP</a></h1>
+			<h4><a href="#">Portfolio</a></h4>
+			<h4><a href="#">About</a></h4>
+			<h4><a href="#">Contact</a></h4>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fas fa-bars"></i>
+			</a>
+		</div>
+	</nav><!-- navigation -->
+
+	<header class="box">
+		<img src="img/avataar.png" alt="">
+		<h1>START BOOTSTRAP</h1><br>
+		<p>Graphic Artist - Web Designer - Illustrator<p>
+	</header><!-- header -->
+
+	<main class="box">
+		<div class="portfolio">
+			<h1>Portfolio</h1>
+			<img src="img/cabin.png" alt="">
+			<img src="img/cake.png" alt="">
+			<img src="img/circus.png" alt="">
+			<img src="img/game.png" alt="">
+			<img src="img/safe.png" alt="">
+			<img src="img/submarine.png" alt="">
+		</div><!-- Portfolio -->
+		<div class="about">
+			<h1>About</h1>
+			<section>
+				<p class="para1">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+			</section>
+			<section>
+				<p class="para2">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+			</section>
+			<button><span class="fa fa-download"></span>Free Download</button>
+		</div><!-- about -->
+		<div class="contactme">
+			<h1>Contact me</h1>
+			<input type="text" placeholder="name"><br>
+			<input type="email" placeholder="email"><br>
+			<input type="phone" placeholder="Contact"><br>
+			<textarea name="" id="" cols="20" rows="1">Message</textarea>
+			<button>Send</button>
+		</div><!-- Contact -->
+	</main><!-- Main Body -->
+
+	<footer class="box">
+		<div class="footersection">
+			<section>
+				<h1>location</h1>
+				<p>2215 John Daniel Drive Clark, MO 65243</p>
+			</section>
+			<section>
+				<h1>Around the Web</h1>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-linkedin-in"></i>
+				<i class="fab fa-youtube"></i>
+			</section>
+			<section>
+				<h1>About Freelancer</h1>
+				<p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+			</section>
+		</div>
+	</footer>
+	<div class="box">
+		<div class="copyright">
+			<h1>Copyright Burhan-ud-din 2022</h1>
+		</div>
+	</div>
+
+	<script>
+		function myFunction() {
+  			var x = document.getElementById("mytopnav");
+  			if (x.className === "nav-link") {
+    		x.className += " responsive";
+  		} else {
+    		x.className = "nav-link";
+  	}
+}
+</script>
+</body>
+</html>
