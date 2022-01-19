@@ -4,7 +4,7 @@
 	font-style: Eras ITC;
 }
 .box {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 .nav-link h1 {
@@ -13,6 +13,7 @@
 nav {
 	background: #2C3E50;
 	height: 80px;
+	position: fixed;
 }
 .nav{
 	float: right;
@@ -33,7 +34,8 @@ nav {
 	color: #1ABC9C;
 }
 header {
-	height: 400px;
+	margin-top: 80px;
+	height: 500px;
 	background: #1ABC9C;
 }
 header img {
@@ -41,19 +43,25 @@ header img {
 	width: 150px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 80px;
+	padding-top: 150px;
 	display: block;
 }
 header h1 {
 	margin-top: 30px;
+	margin-bottom: 0;
 	text-align: center;
 	color: white;
 	font-size: 2.5em;
 }
+.icon{
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+}
 header p{
 	text-align: center;
 	color: white;
-	margin-top: 0;
+	margin-top: 20px;
 }
 .portfolio h1{
  	text-align: center;
@@ -221,6 +229,8 @@ main img{
   }
   .form button{
   	float: left;
+  	margin-left: 75px;
+  	overflow: hidden;
 
   }
   .footersection{
