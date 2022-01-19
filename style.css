@@ -7,15 +7,17 @@
 	width: 90%;
 	margin: auto;
 }
-#logo {
+.nav-link h1 {
 	margin: 0 0 0 50px;
-}
-#nav {
-	float: right;
 }
 nav {
 	background: #2C3E50;
 	height: 80px;
+}
+.nav{
+	float: right;
+	margin-right: 50px;
+	font-weight: bold;
 }
 .nav-link {
 	height: 100%;
@@ -64,7 +66,7 @@ main img{
 	margin-left: 5%;
 }
 .about {
-	height: 350px;
+	height: 400px;
 	background: #1ABC9C;
 	margin-top: 40px;
 }
@@ -73,16 +75,20 @@ main img{
 	color: white;
 	text-align: center;
 }
+.sectiondiv {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
 .about section{
 	display: inline-block;
 	float: left;
 	height: 120px;
 	width: 30%;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left: 10%;
 	color: white;
-	border: 1px solid grey;
-	overflow: hidden;
+	padding: 25px;
 }
 .about section p{
 	text-align: justify;
@@ -90,16 +96,26 @@ main img{
 .about button{
 	padding: 10px;
 	border: 2px solid white;
-	border-radius: 20%;
+	border-radius: 10%;
 	background: #1ABC9C;
 	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 .about button:hover{
 	background: white;
 	color: black;
+
+}
+.contactme {
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 .contactme h1{
-	padding: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	text-align: center;
 }
 .contactme input, textarea{
@@ -121,7 +137,7 @@ main img{
 	margin-left: 30%;
 	border: hidden;
 }
-footer{
+.footersection{
 	background-color: #2C3E50;
 	height: 200px;
 }
@@ -129,7 +145,7 @@ footer{
 	float: left;
 	display: inline-block;
 	width: 25%;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left:80px;
 }
 .footersection section h1{
@@ -137,7 +153,8 @@ footer{
 }
 .footersection section p{
 	color: white;
-	text-align: center;
+	margin-top: 20px;
+	
 }
 .footersection i{
 	padding: 1px;
@@ -166,11 +183,11 @@ footer{
 .nav-link {
   overflow: hidden;
 }
-.topnav .icon {
+.nav-link .icon {
   display: none;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 600px){
 	.nav-link a:not(:first-child) {
 		display: none;
 	}
@@ -186,9 +203,37 @@ footer{
 	margin-right: auto;
 	display: block;
   }
+  .about{
+  	height: 500px;
+  }
+  .sectiondiv section{
+  	width: 70%;
+  	height: auto;
+  	padding-left: auto;
+  	padding-right: auto;
+  	padding-bottom: 0;
+  }
+  .sectiondiv button{
+
+  }
+  .contactme{
+  	height: 470px;
+  }
+  .form button{
+  	float: left;
+
+  }
+  .footersection{
+  	height: 400px;
+  	text-align: center;
+  }
+  .footersection section{
+  	width: 70%;
+  	margin-bottom: 30px;
+  }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:600px) {
   .nav-link.responsive {position: relative;}
   .nav-link.responsive .icon {
     position: absolute;

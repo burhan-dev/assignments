@@ -6,17 +6,30 @@
 	<title>My Demo WebPage</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/42ec929316.js" crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+  			var x = document.getElementById("mytopnav");
+  			if (x.className === "nav-link") {
+    		x.className += " responsive";
+  			} 
+  			else {
+    		x.className = "nav-link";
+  			}
+			}
+	</script>
 </head>
 <body>
 	<nav class="box">
 		<div class="nav-link" id="mytopnav">
-			<h1 id="logo"><a href="#">START BOOTSTRAP</a></h1>
-			<h4><a href="#">Portfolio</a></h4>
-			<h4><a href="#">About</a></h4>
-			<h4><a href="#">Contact</a></h4>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<h1><a href="#">START BOOTSTRAP</a></h1>
+			<div class="nav">
+				<a href="#">Portfolio</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     			<i class="fas fa-bars"></i>
 			</a>
+			</div>
 		</div>
 	</nav><!-- navigation -->
 
@@ -38,21 +51,26 @@
 		</div><!-- Portfolio -->
 		<div class="about">
 			<h1>About</h1>
-			<section>
-				<p class="para1">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-			</section>
-			<section>
-				<p class="para2">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-			</section>
-			<button><span class="fa fa-download"></span>Free Download</button>
+			<!-- <span><i class="fas fa-horizontal-rule"></i>&emsp;<i class="fal fa-star"></i>&emsp;<i class="fas fa-horizontal-rule"></span> -->
+			<div class="sectiondiv">
+				<section>
+					<p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+				</section>
+				<section>
+					<p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+				</section>
+			</div>
+			<button><span class="fa fa-download"></span> Free Download</button>
 		</div><!-- about -->
 		<div class="contactme">
 			<h1>Contact me</h1>
-			<input type="text" placeholder="name"><br>
-			<input type="email" placeholder="email"><br>
-			<input type="phone" placeholder="Contact"><br>
-			<textarea name="" id="" cols="20" rows="1">Message</textarea>
-			<button>Send</button>
+			<div class="form">
+				<input type="text" placeholder="name"><br>
+				<input type="email" placeholder="email"><br>
+				<input type="phone" placeholder="Contact"><br>
+				<textarea name="" id="" cols="20" rows="1" placeholder="Message"></textarea>
+				<button>Send</button>
+			</div>
 		</div><!-- Contact -->
 	</main><!-- Main Body -->
 
@@ -77,19 +95,10 @@
 	</footer>
 	<div class="box">
 		<div class="copyright">
-			<h1>Copyright Burhan-ud-din 2022</h1>
+			<h1>Copyright &copy; Burhan-ud-din 2022</h1>
 		</div>
 	</div>
 
-	<script>
-		function myFunction() {
-  			var x = document.getElementById("mytopnav");
-  			if (x.className === "nav-link") {
-    		x.className += " responsive";
-  		} else {
-    		x.className = "nav-link";
-  	}
-}
-</script>
+	
 </body>
 </html>
